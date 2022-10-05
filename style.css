@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+/* Indie flower */
+@font-face {
+    font-family: 'Indie flower';
+    src: url('./assets/fonts/IndieFlower.ttf');
+}
+
+/*Inria sans regular */
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/inria-sans.regular.ttf');
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 46px;
+    grid-template-areas:
+        "item-one item-two item-three";
+    justify-items: center;
+    align-items: center;
+    background-color: #484c6f;
+    font-family: 'Inria Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.item-one {
+    grid-area: item-one;
+}
+
+.item-two {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-area: item-two;
+}
+
+.item-two p {
+    font-family: 'Indie flower', sans-serif;
+    color: #EF8509;
+}
+
+.item-two picture {
+    align-self: center;
+}
+
+.item-three {
+    grid-area: item-three;
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1429px) {
+    footer {
+        font-size: 24px;
+        grid-template-rows: 99px;
+    }
+
+    .item-two img {
+        padding-left: 10px;
+    }
+}
