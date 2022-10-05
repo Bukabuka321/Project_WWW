@@ -1,4 +1,5 @@
 body {
+    background: #001833;
     margin: 0;
 }
 
@@ -13,6 +14,52 @@ body {
     font-family: 'Inria Sans';
     src: url('./assets/fonts/inria-sans.regular.ttf');
 }
+
+/* contact form style */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  form {
+    color: #ffffff;
+    max-width: 654px;
+    margin: 0 auto;
+    text-align: right;
+  }
+  input {
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    background-color: #97bfd0;
+  }
+  
+  textarea {
+    width: 99%;
+    border: none;
+    border-radius: 5px;
+    background-color: #97bfd0;
+  }
+  
+  input[type="button"] {
+    padding: 0 20px;
+    color: white;
+    margin-top: 15px;
+    background-color: #ef8509;
+  }
+  label {
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  
+  h1 {
+    font-weight: 300;
+    text-align: center;
+  }
+
+
 
 footer {
     display: grid;
