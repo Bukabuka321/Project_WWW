@@ -63,7 +63,8 @@ div h1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
+        align-items: flex-start;
+        gap: 80px;
     }
 
     .AboutUs div:last-child {

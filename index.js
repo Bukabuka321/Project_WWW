@@ -6,9 +6,9 @@ class CardAboutUs {
         this.text = text;
     }
 }
-const whoWeAre = new CardAboutUs("Who we are", "emoji _who we.png", "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
-const whatWeDo = new CardAboutUs("What we do", "emoji _hacker cat_.png", "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
-const ourGoals = new CardAboutUs("Our goals", "emoji _goals.png", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
+const whoWeAre = new CardAboutUs("Who we are", "emoji _who we.png", "We are a small team of talented beginner web-developers. We are creative and optimistic people. We are ready for new knowledge. We are open-minded and look forward to having new members join our Team");
+const whatWeDo = new CardAboutUs("What we do", "emoji _hacker cat_.png", "We are learning, improving and communicating well with others. We are sharing our knowledge and helping each other. We are writing the clean, readable code. And we are enjoying our work!");
+const ourGoals = new CardAboutUs("Our goals", "emoji _goals.png", "Keeping up to date with the web developer industry and with professional designing. Creating visually appealing and user-friendly websites. Making the websites that we build for clients even better. Being able to manage time and prioritize tasks. Receiving feedback  and improving ourselves");
 
 const cards = [whoWeAre, whatWeDo, ourGoals];
 
