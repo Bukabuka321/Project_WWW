@@ -27,8 +27,10 @@ function createCard(objCard) {
     cardHeader.appendChild(cardTitle);
 
     const cardImg = document.createElement("img");
-    cardImg.src = `assets/${objCard.picture}`;
+    cardImg.src = `assets/images/${objCard.picture}`;
     cardImg.classList.add("card-img");
+    cardImg.width = 65;
+    cardImg.height = 65;
     cardHeader.appendChild(cardImg);
 
     const cardBody = document.createElement("p");
