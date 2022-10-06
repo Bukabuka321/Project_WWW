@@ -17,13 +17,17 @@ body {
 
 /* contact form style */
 
+
 .container {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
   }
   form {
+    font-family: 'Inria Sans';
+    padding: 20px;
     color: #ffffff;
     max-width: 654px;
     margin: 0 auto;
@@ -35,7 +39,6 @@ body {
     border-radius: 5px;
     background-color: #97bfd0;
   }
-  
   textarea {
     width: 99%;
     border: none;
@@ -44,11 +47,12 @@ body {
   }
   
   input[type="button"] {
+    margin-top: 20px;
     padding: 0 20px;
     color: white;
-    margin-top: 15px;
     background-color: #ef8509;
   }
+
   label {
     margin-top: 15px;
     margin-bottom: 8px;
