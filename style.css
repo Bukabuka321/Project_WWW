@@ -63,7 +63,38 @@ body {
     text-align: center;
   }
 
+  /* modal style */
 
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ef8509;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+  }
+  /* The Close Button */
+
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+/* footer style */
 
 footer {
     display: grid;
