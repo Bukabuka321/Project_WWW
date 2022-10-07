@@ -5,13 +5,38 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book of the wilders</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+  <title>Book of the wilders</title>
 </head>
-
 <body>
-
-  <form action="mailto:infowildersbook@gmail.com" method="post" enctype="text/plain">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/images/wilderswide web (12) (2).png" alt="Logo">
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container-logo">
+    <img src="assets/images/wilderswide web (11) (1).png" alt="">
+  
+  </div>
+   <form action="mailto:infowildersbook@gmail.com" method="post" enctype="text/plain">
     <h1>Contact us</h1>
      <div class="container"> 
       <label>Your name</label>
@@ -25,16 +50,13 @@
       </textarea> 
     </div>
       <input type="button" name="button" value="Send" id="submitButton">
-
 </form>
-
 <div class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <p>Thank you for your interest!</p>
   </div>
 </div>
-
   <footer>
     <p class="item-one">Imprint</p>
     <div class="item-two">
@@ -49,6 +71,7 @@
   </footer>
   <script type="text/javascript" src="footer.js"></script>
   <script type="text/javascript" src="contactForm.js"></script>
+  <script src="header.js"></script>
 </body>
 
 </html>
