@@ -48,7 +48,7 @@ footer {
 }
 
 /* Desktop breakpoint */
-@media screen and (min-width: 1429px) {
+@media screen and (min-width: 1024x) {
     footer {
         font-size: 24px;
         grid-template-rows: 99px;
