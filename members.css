@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "IndieFlower";
+    src: url(/Project_WWW/fonts/IndieFlower-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "InriaSans-Regular";
+    src: url(/Project_WWW/fonts/InriaSans-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(0, 24, 51, 1);
+}
+.members {
+    margin: 5% 0% 5% 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.members_title{
+    width: 70%;
+    background-color: rgba(82, 136, 159, 1);
+    border-radius: 20px 20px 0 0;
+}
+.members_title h1 {
+    font-family: "InriaSans-Regular";
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+.members p {
+    color: white;
+}
+.member_card {
+    width: 100%;
+    padding: 10% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.member_card:nth-child(2n) {
+    background-color: rgba(82, 136, 159, 1);
+}
+.member_card.member_card:nth-child(2n+1) {
+    background-color: rgba(0, 24, 51, 1);
+}
+.member_photo {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.member_name {
+    margin: 3% 5% 3% 5%;
+}
+.member_name p {
+    width: 100%;
+    font-size: 2em;
+}
+.member_description {
+    margin: 3% 5% 3% 5%;
+    width: 90%;
+}
+.member_card p {
+    margin: 0;
+    text-align: center;
+}
+.member_description p {
+    font-family: "IndieFlower";
+    font-size: 1.5em;
+}
+.member_information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.member_profiles {
+    margin: 3% 5% 3% 5%;
+    
+}
+.member_card ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    padding: 0%;
+}
+.member_card ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 5% 0 5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* ICONS PREFERENCES START */
+.member_card ul li img {
+    width: 2.5em;
+    height: 2.5em;
+}
+/* ICONS PREFERENCES END */
+
+/* FOTO START*/
+.member_card .member_photo img {
+    border-radius: 50%;
+    width: 350px;
+    height: 400px;
+}
+/* FOTO START*/
+
+
+/*Desktop version*/
+@media screen and (min-width: 1024px) {
+
+    /* MEMBERS TITLE START */
+    .members_title {
+        width: 51%;
+        border-radius: 20px 20px 0 0;
+    }
+    /* MEMBERS TITLE END */
+
+
+    /* GLOBAL PREFERENCES START FOR DESKTOP */
+    .members {
+        background-color: rgba(0, 24, 51, 1);
+        margin: 5% 3% 5% 3%;
+    }
+    .member_card {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        padding: 10% 0 10% 0;
+    }
+    .members_title h1 {
+        font-size: 2.5em;
+    }
+    .member_card > .member_photo {
+        padding: 5%;
+        margin: 0 3% 0 3%;
+    }
+    .member_name {
+        margin: 3% 0 3% 0;
+    }
+    .member_name p {
+        font-family: "InriaSans-Regular";
+        width: 100%;
+        font-size: 5em;
+    }
+    .member_description {
+        margin: 3% 0 3% 0%;
+        width: 70%;
+    }
+    .member_description p {
+        font-size: 3em;
+    }
+    .member_profiles {
+        margin: 3% 0% 3% 0;
+    }
+    .member_card ul {
+        width: 20rem;
+    }
+    .member_card ul li:last-child {
+        padding: 0 2% 0 5%;
+    }
+    .member_card ul li:first-child {
+        padding: 0 5% 0 2%;
+    }
+    .member_card ul li img {
+        width: 3em;
+        height: 3em;
+    }
+    /* GLOBAL PREFERENCES END FOR DESKTOP */
+
+
+   /*  ROUND BORDERS START */
+.member_card:nth-child(2) {
+    border-radius: 50px 50px 0 0;
+}
+.member_card:last-child {
+    border-radius: 0 0 50px 50px;
+}
+    /*  ROUND BORDERS END */
+
+    /*odd member cards start*/
+    .member_card:nth-child(2n) {
+        justify-content: flex-start;
+    }
+    .member_card:nth-child(2n) > .member_information {
+        align-items: flex-start;
+    }
+    .member_card:nth-child(2n)  p {
+        text-align: left;
+    }
+    /*odd member cards end*/
+
+
+    /* even member cards start */
+    .member_card:nth-child(2n+1) {
+        justify-content: flex-end;
+    }
+    .member_card:nth-child(2n+1) > .member_photo {
+        order: 1;
+    }
+    .member_card:nth-child(2n+1) > .member_information {
+        align-items: flex-end;
+    }
+    .member_card:nth-child(2n+1)  p {
+        text-align: right;
+    }
+    /* even member cards start */
+}
+
