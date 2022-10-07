@@ -128,7 +128,8 @@ body {
 
     /* MEMBERS TITLE START */
     .members_title {
-        width: 51%;
+        width: 50%;
+        padding-top: 2%;
         border-radius: 20px 20px 0 0;
     }
     /* MEMBERS TITLE END */
@@ -137,13 +138,13 @@ body {
     /* GLOBAL PREFERENCES START FOR DESKTOP */
     .members {
         background-color: rgba(0, 24, 51, 1);
-        margin: 5% 3% 5% 3%;
+        margin: 5% 7% 5% 7%;
     }
     .member_card {
         flex-wrap: nowrap;
         flex-direction: row;
         width: 100%;
-        padding: 10% 0 10% 0;
+        padding: 5% 0 5% 0;
     }
     .members_title h1 {
         font-size: 2.5em;
