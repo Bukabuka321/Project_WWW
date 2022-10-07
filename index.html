@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
   <title>Book of the wilders</title>
 </head>
-
 <body>
   <nav class="navbar">
     <div class="logo">
@@ -37,6 +36,27 @@
     <img src="assets/images/wilderswide web (11) (1).png" alt="">
   
   </div>
+   <form action="mailto:infowildersbook@gmail.com" method="post" enctype="text/plain">
+    <h1>Contact us</h1>
+     <div class="container"> 
+      <label>Your name</label>
+      <input type="text" name="yourName" value="">
+
+      <label>Your email</label>
+      <input type="email" name="yourEmail" value=""> 
+      
+      <label>Your message</label>
+      <textarea rows="10"> 
+      </textarea> 
+    </div>
+      <input type="button" name="button" value="Send" id="submitButton">
+</form>
+<div class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Thank you for your interest!</p>
+  </div>
+</div>
   <footer>
     <p class="item-one">Imprint</p>
     <div class="item-two">
@@ -50,6 +70,7 @@
     <p class="item-three">Privacy policy</p>
   </footer>
   <script type="text/javascript" src="footer.js"></script>
+  <script type="text/javascript" src="contactForm.js"></script>
   <script src="header.js"></script>
 </body>
 
