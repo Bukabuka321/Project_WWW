@@ -117,8 +117,8 @@ body {
 /* FOTO START*/
 .member_card .member_photo img {
     border-radius: 50%;
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 /* FOTO START*/
 
@@ -158,14 +158,14 @@ body {
     .member_name p {
         font-family: "InriaSans-Regular";
         width: 100%;
-        font-size: 5em;
+        font-size: 3em;
     }
     .member_description {
         margin: 3% 0 3% 0%;
         width: 70%;
     }
     .member_description p {
-        font-size: 3em;
+        font-size: 1.5em;
     }
     .member_profiles {
         margin: 3% 0% 3% 0;
@@ -180,8 +180,8 @@ body {
         padding: 0 5% 0 2%;
     }
     .member_card ul li img {
-        width: 3em;
-        height: 3em;
+        width: 2em;
+        height: 2em;
     }
     /* GLOBAL PREFERENCES END FOR DESKTOP */
 
