@@ -1,3 +1,164 @@
+
+:root {
+    --main-color: black;
+    --AboutUs-text-color: #FFC163;
+    --font-size1: 32px;
+    --font-size2: 16px;
+    --title-font-family: 'Inria Sans';
+    --book-font-family: 'Indie Flower';
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+/* Indie flower */
+@font-face {
+    font-family: 'Indie flower';
+    src: url('./assets/fonts/IndieFlower.ttf');
+}
+
+/*Inria sans regular */
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/inria-sans.regular.ttf');
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 46px;
+    grid-template-areas:
+        "item-one item-two item-three";
+    justify-items: center;
+    align-items: center;
+    background-color: #484c6f;
+    font-family: 'Inria Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.item-one {
+    grid-area: item-one;
+}
+
+.item-two {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-area: item-two;
+}
+
+.item-two p {
+    font-family: 'Indie flower', sans-serif;
+    color: #EF8509;
+}
+
+.item-two picture {
+    align-self: center;
+}
+
+.item-three {
+    grid-area: item-three;
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1429px) {
+    footer {
+        font-size: 24px;
+        grid-template-rows: 99px;
+    }
+
+    .item-two img {
+        padding-left: 10px;
+    }
+
+}
+
+h1.card-title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--title-font-family);
+    font-size: var(--font-size1);
+
+
+}
+
+.card-header {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+
+}
+
+.card-body {
+    color: var(--AboutUs-text-color);
+    letter-spacing: 0.2em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 2em;
+    font-family: var(--book-font-family);
+    font-size: var(--font-size2);
+}
+
+.CardAboutUs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.AboutUs {
+    display: block;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .AboutUs {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .AboutUs div:last-child {
+        width: 80%;
+    }
+
+    .card-header {
+        display: flex;
+        gap: 60px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        letter-spacing: 0.2em;
+    }
+
+    .CardAboutUs {
+        width: 40%;
+    }
+
+    h1.card-title {
+        font-size: var(--font-size1);
+
+    }
+
+    .card-body {
+        letter-spacing: 0.3em;
+        font-size: var(--font-size2);
+        width: 100%;
+    }
 body {
     background: #001833;
     margin: 0;
