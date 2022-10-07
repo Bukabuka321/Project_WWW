@@ -1,0 +1,308 @@
+
+:root {
+    --main-color: black;
+    --AboutUs-text-color: #FFC163;
+    --font-size1: 32px;
+    --font-size2: 16px;
+    --title-font-family: 'Inria Sans';
+    --book-font-family: 'Indie Flower';
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+/* Indie flower */
+@font-face {
+    font-family: 'Indie flower';
+    src: url('./assets/fonts/IndieFlower.ttf');
+}
+
+/*Inria sans regular */
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/inria-sans.regular.ttf');
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 46px;
+    grid-template-areas:
+        "item-one item-two item-three";
+    justify-items: center;
+    align-items: center;
+    background-color: #484c6f;
+    font-family: 'Inria Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.item-one {
+    grid-area: item-one;
+}
+
+.item-two {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-area: item-two;
+}
+
+.item-two p {
+    font-family: 'Indie flower', sans-serif;
+    color: #EF8509;
+}
+
+.item-two picture {
+    align-self: center;
+}
+
+.item-three {
+    grid-area: item-three;
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1429px) {
+    footer {
+        font-size: 24px;
+        grid-template-rows: 99px;
+    }
+
+    .item-two img {
+        padding-left: 10px;
+    }
+
+}
+
+h1.card-title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--title-font-family);
+    font-size: var(--font-size1);
+
+
+}
+
+.card-header {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+
+}
+
+.card-body {
+    color: var(--AboutUs-text-color);
+    letter-spacing: 0.2em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 2em;
+    font-family: var(--book-font-family);
+    font-size: var(--font-size2);
+}
+
+.CardAboutUs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.AboutUs {
+    display: block;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .AboutUs {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .AboutUs div:last-child {
+        width: 80%;
+    }
+
+    .card-header {
+        display: flex;
+        gap: 60px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        letter-spacing: 0.2em;
+    }
+
+    .CardAboutUs {
+        width: 40%;
+    }
+
+    h1.card-title {
+        font-size: var(--font-size1);
+
+    }
+
+    .card-body {
+        letter-spacing: 0.3em;
+        font-size: var(--font-size2);
+        width: 100%;
+    }
+body {
+    background: #001833;
+    margin: 0;
+}
+
+/* Indie flower */
+@font-face {
+    font-family: 'Indie flower';
+    src: url('./assets/fonts/IndieFlower.ttf');
+}
+
+/*Inria sans regular */
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/inria-sans.regular.ttf');
+}
+
+/* contact form style */
+
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  form {
+    font-family: 'Inria Sans';
+    padding: 20px;
+    color: #ffffff;
+    max-width: 654px;
+    margin: 0 auto;
+    text-align: right;
+  }
+  input {
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    background-color: #97bfd0;
+  }
+  textarea {
+    width: 99%;
+    border: none;
+    border-radius: 5px;
+    background-color: #97bfd0;
+  }
+  
+  input[type="button"] {
+    margin-top: 20px;
+    padding: 0 20px;
+    color: white;
+    background-color: #ef8509;
+  }
+
+  label {
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  
+  h1 {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  /* modal style */
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ef8509;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+  }
+  /* The Close Button */
+
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+/* footer style */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 46px;
+    grid-template-areas:
+        "item-one item-two item-three";
+    justify-items: center;
+    align-items: center;
+    background-color: #484c6f;
+    font-family: 'Inria Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.item-one {
+    grid-area: item-one;
+}
+
+.item-two {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-area: item-two;
+}
+
+.item-two p {
+    font-family: 'Indie flower', sans-serif;
+    color: #EF8509;
+}
+
+.item-two picture {
+    align-self: center;
+}
+
+.item-three {
+    grid-area: item-three;
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1429px) {
+    footer {
+        font-size: 24px;
+        grid-template-rows: 99px;
+    }
+
+    .item-two img {
+        padding-left: 10px;
+    }
+}
+}

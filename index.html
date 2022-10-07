@@ -4,10 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/Project_WWW/members.css" />
-    <title>Document</title>
+    <title>Book of the wilders</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/wilderswide web (12) (2).png" alt="Logo" />
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-logo">
+      <img src="assets/images/wilderswide web (11) (1).png" alt="" />
+    </div>
+    <div class="AboutUs"></div>
     <section class="members">
       <div class="members_title">
         <h1>Our wild team</h1>
@@ -195,5 +226,54 @@
         </div>
       </div>
     </section>
+    <form
+      action="mailto:infowildersbook@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <h1>Contact us</h1>
+      <div class="container">
+        <label>Your name</label>
+        <input type="text" name="yourName" value="" />
+        <label>Your email</label>
+        <input type="email" name="yourEmail" value="" />
+        <label>Your message</label>
+        <textarea rows="10"> </textarea>
+      </div>
+      <input type="button" name="button" value="Send" id="submitButton" />
+    </form>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thank you for your interest!</p>
+      </div>
+    </div>
+    <footer>
+      <p class="item-one">Imprint</p>
+      <div class="item-two">
+        <p class="item-two-one">Made with</p>
+        <picture>
+          <source
+            media="(max-width: 1428px)"
+            srcset="./assets/images/heart-mobile.svg"
+          />
+          <source
+            media="(min-width: 1429px)"
+            srcset="./assets/images/heart-desktop.svg"
+          />
+          <img
+            class="item-two-two"
+            src="./assets/images/heart-mobile.svg"
+            alt="Heart"
+          />
+        </picture>
+      </div>
+      <p class="item-three">Privacy policy</p>
+    </footer>
+    <script defer src="index.js"></script>
+    <script type="text/javascript" src="./components/footer.js"></script>
+    <script type="text/javascript" src="footer.js"></script>
+    <script type="text/javascript" src="contactForm.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>
