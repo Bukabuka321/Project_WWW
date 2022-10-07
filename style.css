@@ -80,6 +80,7 @@ h1.card-title {
     font-family: var(--title-font-family);
     font-size: var(--font-size1);
 
+
 }
 
 .card-header {
@@ -90,6 +91,7 @@ h1.card-title {
     align-items: center;
     margin-bottom: 10px;
     letter-spacing: 0.1em;
+
 }
 
 .card-body {
